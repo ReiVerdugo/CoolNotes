@@ -12,6 +12,12 @@
 		7F280A5F1E37C60D00437650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F280A5D1E37C60D00437650 /* Main.storyboard */; };
 		7F280A611E37C60D00437650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F280A601E37C60D00437650 /* Assets.xcassets */; };
 		7F280A641E37C60D00437650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F280A621E37C60D00437650 /* LaunchScreen.storyboard */; };
+		7F280A6F1E37EF2500437650 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A6E1E37EF2500437650 /* CoreDataStack.swift */; };
+		7F280A931E37F2BE00437650 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A911E37F2BE00437650 /* Model.xcdatamodeld */; };
+		7F280A981E37F33200437650 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A941E37F33200437650 /* Note+CoreDataClass.swift */; };
+		7F280A991E37F33200437650 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A951E37F33200437650 /* Note+CoreDataProperties.swift */; };
+		7F280A9A1E37F33200437650 /* Notebook+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A961E37F33200437650 /* Notebook+CoreDataClass.swift */; };
+		7F280A9B1E37F33200437650 /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A971E37F33200437650 /* Notebook+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		7F280A601E37C60D00437650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F280A631E37C60D00437650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F280A651E37C60D00437650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F280A6E1E37EF2500437650 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		7F280A921E37F2BE00437650 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7F280A941E37F33200437650 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "../Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F280A951E37F33200437650 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "../Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F280A961E37F33200437650 /* Notebook+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataClass.swift"; path = "../Notebook+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F280A971E37F33200437650 /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataProperties.swift"; path = "../Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,7 @@
 		7F280A4D1E37C60D00437650 = {
 			isa = PBXGroup;
 			children = (
+				7F280A911E37F2BE00437650 /* Model.xcdatamodeld */,
 				7F280A581E37C60D00437650 /* CoolNotes */,
 				7F280A571E37C60D00437650 /* Products */,
 			);
@@ -56,12 +69,25 @@
 			children = (
 				7F280A591E37C60D00437650 /* AppDelegate.swift */,
 				7F280A5B1E37C60D00437650 /* ViewController.swift */,
+				7F280A6E1E37EF2500437650 /* CoreDataStack.swift */,
+				7F280A781E37EFE000437650 /* ManagedObjectClasses */,
 				7F280A5D1E37C60D00437650 /* Main.storyboard */,
 				7F280A601E37C60D00437650 /* Assets.xcassets */,
 				7F280A621E37C60D00437650 /* LaunchScreen.storyboard */,
 				7F280A651E37C60D00437650 /* Info.plist */,
 			);
 			path = CoolNotes;
+			sourceTree = "<group>";
+		};
+		7F280A781E37EFE000437650 /* ManagedObjectClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7F280A941E37F33200437650 /* Note+CoreDataClass.swift */,
+				7F280A951E37F33200437650 /* Note+CoreDataProperties.swift */,
+				7F280A961E37F33200437650 /* Notebook+CoreDataClass.swift */,
+				7F280A971E37F33200437650 /* Notebook+CoreDataProperties.swift */,
+			);
+			name = ManagedObjectClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F280A9B1E37F33200437650 /* Notebook+CoreDataProperties.swift in Sources */,
 				7F280A5C1E37C60D00437650 /* ViewController.swift in Sources */,
 				7F280A5A1E37C60D00437650 /* AppDelegate.swift in Sources */,
+				7F280A981E37F33200437650 /* Note+CoreDataClass.swift in Sources */,
+				7F280A6F1E37EF2500437650 /* CoreDataStack.swift in Sources */,
+				7F280A9A1E37F33200437650 /* Notebook+CoreDataClass.swift in Sources */,
+				7F280A931E37F2BE00437650 /* Model.xcdatamodeld in Sources */,
+				7F280A991E37F33200437650 /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +331,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F280A911E37F2BE00437650 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F280A921E37F2BE00437650 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7F280A921E37F2BE00437650 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7F280A4E1E37C60D00437650 /* Project object */;
 }
