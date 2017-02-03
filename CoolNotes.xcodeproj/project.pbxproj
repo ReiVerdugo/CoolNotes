@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F19A0271E450F2D002A3B0B /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A0261E450F2D002A3B0B /* CoreDataTableViewController.swift */; };
+		7F19A0291E4510E5002A3B0B /* NotebooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A0281E4510E5002A3B0B /* NotebooksTableViewController.swift */; };
 		7F280A5A1E37C60D00437650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A591E37C60D00437650 /* AppDelegate.swift */; };
 		7F280A5C1E37C60D00437650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F280A5B1E37C60D00437650 /* ViewController.swift */; };
 		7F280A5F1E37C60D00437650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F280A5D1E37C60D00437650 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F19A0261E450F2D002A3B0B /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		7F19A0281E4510E5002A3B0B /* NotebooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebooksTableViewController.swift; sourceTree = "<group>"; };
 		7F280A561E37C60D00437650 /* CoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F280A591E37C60D00437650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F280A5B1E37C60D00437650 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				7F280A591E37C60D00437650 /* AppDelegate.swift */,
 				7F280A5B1E37C60D00437650 /* ViewController.swift */,
 				7F280A6E1E37EF2500437650 /* CoreDataStack.swift */,
+				7F19A0261E450F2D002A3B0B /* CoreDataTableViewController.swift */,
+				7F19A0281E4510E5002A3B0B /* NotebooksTableViewController.swift */,
 				7F280A781E37EFE000437650 /* ManagedObjectClasses */,
 				7F280A5D1E37C60D00437650 /* Main.storyboard */,
 				7F280A601E37C60D00437650 /* Assets.xcassets */,
@@ -166,10 +172,12 @@
 				7F280A5C1E37C60D00437650 /* ViewController.swift in Sources */,
 				7F280A5A1E37C60D00437650 /* AppDelegate.swift in Sources */,
 				7F280A981E37F33200437650 /* Note+CoreDataClass.swift in Sources */,
+				7F19A0291E4510E5002A3B0B /* NotebooksTableViewController.swift in Sources */,
 				7F280A6F1E37EF2500437650 /* CoreDataStack.swift in Sources */,
 				7F280A9A1E37F33200437650 /* Notebook+CoreDataClass.swift in Sources */,
 				7F280A931E37F2BE00437650 /* Model.xcdatamodeld in Sources */,
 				7F280A991E37F33200437650 /* Note+CoreDataProperties.swift in Sources */,
+				7F19A0271E450F2D002A3B0B /* CoreDataTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +337,7 @@
 				7F280A6A1E37C60D00437650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
